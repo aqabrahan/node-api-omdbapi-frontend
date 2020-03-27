@@ -1,0 +1,74 @@
+.jampp
+  &__FieldsSelector
+    @import "./sass/mobile"
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width: 48em)
+      @import "./sass/tablet"
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width: 68em)
+      @import "./sass/desktop"
+
+.list-container
+  position: relative
+  display: flex
+  padding: 10px
+  border-bottom: 2px solid #fff
+  margin-bottom: 5px
+  &-icon
+    border-radius: 50%
+    color: #fff
+    background: #299a15
+    width: 20px
+    height: 20px
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 16px
+    font-weight: bold
+    cursor: pointer
+  &-items
+    width: 200px
+    display: flex
+    flex-direction: column
+    border: 1px solid #ccc
+    border-radius: 4px
+    position: absolute
+    top: 100%
+    background: #f2f2f2
+    &__item
+      display: block
+      padding: 10px 20px
+      text-decoration: none
+      &:hover
+        font-weight: bold
+        background: #ccc
+        text-decoration: none
+      &:visited
+        color: #000
+
+  &-selected
+    display: flex
+    &__select
+      padding: 5px 10px
+      background: #fff
+      border-radius: 5px
+      margin-right: 4px
+      display: flex
+      .text
+        color: #000
+        margin-right: 5px
+      .icon
+        border-radius: 50%
+        color: #fff
+        background: #333
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 10px
+        font-weight: bold
+        cursor: pointer
+        width: 14px
+        height: 14px
+        padding-bottom: 3px
