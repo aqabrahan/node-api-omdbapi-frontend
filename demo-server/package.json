@@ -6,7 +6,7 @@
     "start": "OMDBKEY=824acda5 node index.js"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "babel-core": "^6.26.3",
     "express": "~4.16.0"
   },
